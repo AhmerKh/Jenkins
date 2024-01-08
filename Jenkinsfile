@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                dir('C:/ProgramData/Jenkins/containers')
                 sh 'node --version'
             }
         }
